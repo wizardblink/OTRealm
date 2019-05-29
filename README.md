@@ -1,1 +1,1 @@
-# OTRealm
+# SmartGMO Project
