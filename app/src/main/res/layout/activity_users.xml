@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UsersActivity">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginRight="243dp"
+        android:layout_marginBottom="2dp"
+        android:text="Nombre Usuario"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextInputName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextInputName"
+        android:layout_width="332dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Introducir nombre usuario"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+    <TextView
+        android:id="@+id/textViewPerfil"
+        android:layout_width="96dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginRight="236dp"
+        android:layout_marginBottom="8dp"
+        android:text="Perfil Usuario"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInputName" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="332dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPerfil"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="12dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonOperario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Operario de producción"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTecnico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Técnico de mantenimiento"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="16dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewCT"
+        android:layout_width="134dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginRight="206dp"
+        android:layout_marginBottom="8dp"
+        android:text="Centro de trabajo"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewArea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCT"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="175dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonAlmacen"
+            android:layout_width="169dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="8dp"
+            android:text="Almacén"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFabrica"
+            android:layout_width="169dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="8dp"
+            android:text="Fábrica"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="16dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="7dp"
+        android:text="Seleccione área productiva"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerArea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="129dp" />
+
+    <Spinner
+        android:id="@+id/spinnerArea"
+        android:layout_width="330dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewArea"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="14dp" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="377dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginRight="124dp"
+        android:layout_marginBottom="8dp"
+        android:text="VALIDAR PERFÍL"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerArea" />
+
+</android.support.constraint.ConstraintLayout>
