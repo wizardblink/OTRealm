@@ -72,22 +72,29 @@ public class OTsAdapter extends BaseAdapter {
 
         OTs oTs= list.get(position);
         vh.descripcion.setText(oTs.getDescription());
-        //vh.prioridad.setText(oTs.getPriority());
-        //vh.state.setText(oTs.getState());
-        //vh.usuario.setText(oTs.getUsuario());
-        //vh.tipo.setText(oTs.getType());
-        //DateFormat df = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
-        //String createdAt = df.format(oTs.getCreatedAt());
-        //vh.createdAt.setText(createdAt);
-        //vh.equipo.setText(oTs.getEquipo());
-        //vh.generatedBy.setText(oTs.getGeneratedBy());
-        //DateFormat dff = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
-        //String dateFinal = dff.format(oTs.getFinishedAt());
-        //vh.dateFinal.setText(dateFinal);
-        //DateFormat dfff = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
-        //String dateAsign = dfff.format(oTs.getRealInit());
-        //vh.dateAsign.setText(dateAsign);
-
+        vh.prioridad.setText(oTs.getPriority());
+        vh.state.setText(oTs.getState());
+        vh.usuario.setText(oTs.getUsuario());
+        vh.tipo.setText(oTs.getType());
+        DateFormat df = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
+        String createdAt = df.format(oTs.getCreatedAt());
+        vh.createdAt.setText(createdAt);
+        vh.equipo.setText(oTs.getEquipo());
+        vh.generatedBy.setText(oTs.getGeneratedBy());
+        if(oTs.getFinishedAt()!=null) {
+            DateFormat dff = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
+            String dateFinal = dff.format(oTs.getFinishedAt());
+            vh.dateFinal.setText(dateFinal);
+        }else{
+            vh.dateFinal.setText("Sin fecha de finalización");
+        }
+        if(oTs.getRealInit()!=null){
+            DateFormat dfff = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
+            String fechaAsignación = dfff.format(oTs.getRealInit());
+            vh.dateAsign.setText(fechaAsignación);
+        }else {
+            vh.dateAsign.setText("Sin fecha de asignación");
+        }
         return convertView;
     }
 

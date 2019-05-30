@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="100dp"
     android:paddingLeft="4dp"
     android:paddingRight="4dp">
 
@@ -11,32 +11,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Equipo"
-        android:textSize="12dp"/>
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/textViewOtDescripciónNew"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Descripción"
-        android:textSize="10dp" />
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/textViewOtGeneratedByNew"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Generada por"
-        android:textSize="9dp" />
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/textViewOtUsuarioNew"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Asignada a"
-        android:textSize="9dp" />
+        android:textSize="18dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
         android:orientation="horizontal">
 
         <TextView
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.33"
             android:hint="Prioridad"
-            android:textSize="8dp"
+            android:textSize="12dp"
             android:layout_width="match_parent" />
 
         <TextView
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.33"
             android:hint="Tipo"
-            android:textSize="8dp" />
+            android:textSize="12dp" />
 
         <TextView
             android:id="@+id/textViewOtStateNew"
@@ -64,13 +64,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.33"
             android:hint="Estado"
-            android:textSize="8dp" />
+            android:textSize="12dp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
         android:orientation="horizontal">
 
         <TextView
@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.33"
             android:hint="Creada el"
-            android:textSize="8dp"
+            android:textSize="12dp"
             android:layout_width="match_parent" />
 
         <TextView
@@ -89,7 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.33"
             android:hint="Asignada el"
-            android:textSize="8dp" />
+            android:textSize="12dp" />
 
         <TextView
             android:id="@+id/textViewOtDateFinalNew"
@@ -98,7 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.33"
             android:hint="Finalizada el"
-            android:textSize="8dp" />
+            android:textSize="12dp" />
 
     </LinearLayout>
 
